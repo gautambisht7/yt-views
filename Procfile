@@ -1,1 +1,1 @@
-worker: python speakaudio.py
+worker: python ig_bot.py
