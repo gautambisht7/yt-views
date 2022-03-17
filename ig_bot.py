@@ -80,19 +80,16 @@ def follow_like_comment():
             search_2.send_keys(Keys.ENTER)
             count +=1 # count = count +1
             time.sleep(1)
-login('testuseraccount24', 'testuser')
-follow_like_comment()
-
-while (True):        
         driver.implicitly_wait(30)
         follow = driver.find_element_by_xpath('//*[@id="react-root"]/section/main/div/header/section/div[1]/div[2]/div/div/div/span/span[1]/button')
         follow.click()
-        time.sleep(10)
+        time.sleep(8)
         unfollow1 = driver.find_element_by_xpath('//*[@id="react-root"]/section/main/div/header/section/div[1]/div[2]/div/div[2]/div/span/span[1]/button')
-        driver.implicitly_wait(30)
         unfollow1.click()
         driver.implicitly_wait(30)
         unfollow2 = driver.find_element_by_xpath('/html/body/div[6]/div/div/div/div[3]/button[1]')
         driver.implicitly_wait(30)
         unfollow2.click()
-        time.sleep(5)
+        
+login('testuseraccount24', 'testuser')
+follow_like_comment()
