@@ -32,7 +32,6 @@ class InstaBot:
             .click()
   
         time.sleep(getRandomTime())
-        driver.implicitly_wait(30)
         driver.find_element_by_xpath('//button[text()="Not Now"]').click()
         driver.implicitly_wait(30)
         search_2 = driver.find_element_by_xpath('//input[@placeholder="Search"]')
