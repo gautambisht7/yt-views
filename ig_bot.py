@@ -1,12 +1,12 @@
 import time
 from selenium.webdriver.common.keys import Keys
 from selenium import webdriver
-import random
+
 
 
 # initialize driver
 
-driver = webdriver.Edge()
+driver = webdriver.Chrome()
 
 def login(username_, password_):
     driver.get('https://www.instagram.com/')
