@@ -53,6 +53,7 @@ class InstaBot:
         unfollow1 = driver.find_element_by_xpath('//*[@id="react-root"]/section/main/div/header/section/div[1]/div[2]/div/div[2]/div/span/span[1]/button').click()
         time.sleep(getRandomTime())
         unfollow2 = driver.find_element_by_xpath('/html/body/div[6]/div/div/div/div[3]/button[1]').click()
+        print('Done !!!')
         driver.quit()
 
 def getRandomTime():
