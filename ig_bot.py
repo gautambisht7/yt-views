@@ -1,0 +1,57 @@
+from selenium import webdriver
+import time
+from random import seed
+from random import randint
+from selenium.webdriver.common.keys import Keys
+
+
+class InstaBot:
+    def __init__(self, username, password):
+        followFarm = ["the rock", "other_username", "other_username", "kyliejenner", "other_username","other_username", "other_username", "other_username"]
+       
+      
+        driver.get("https://instagram.com")      
+        time.sleep(getRandomTime())
+        driver.find_element_by_xpath("//input[@name=\"username\"]")\
+            .send_keys('_gautambisht_11')
+        driver.find_element_by_xpath("//input[@name=\"password\"]")\
+            .send_keys('e8c2cadf2148')
+        time.sleep(getRandomTime())      
+        driver.find_element_by_xpath('//button[@type="submit"]')\
+            .click()
+
+
+        time.sleep(getRandomTime())
+        driver.find_element_by_xpath("//button[contains(text(), 'Not Now')]")\
+            .click()
+  
+        time.sleep(getRandomTime())
+        driver.find_element_by_xpath('//button[text()="Not Now"]').click()
+            
+        search_2 = driver.find_element_by_xpath('//input[@placeholder="Search"]')
+        search_2.send_keys('virat.kohli')
+        time.sleep(5)
+        search_2.send_keys(Keys.ENTER)   
+        count = 0
+        while count <2:
+             search_2.send_keys(Keys.ENTER)
+             count +=1 # count = count +1
+             time.sleep(1)
+      
+        time.sleep(getRandomTime())
+        driver.implicitly_wait(30)
+        follow = driver.find_element_by_xpath('//*[@id="react-root"]/section/main/div/header/section/div[1]/div[2]/div/div/div/span/span[1]/button').click()
+        time.sleep(7)
+        driver.implicitly_wait(30)
+        unfollow1 = driver.find_element_by_xpath('//*[@id="react-root"]/section/main/div/header/section/div[1]/div[2]/div/div[2]/div/span/span[1]/button').click()
+        time.sleep(getRandomTime())
+        unfollow2 = driver.find_element_by_xpath('/html/body/div[6]/div/div/div/div[3]/button[1]').click()
+        driver.quit()
+
+def getRandomTime():
+        randTime = randint(3, 5)
+        return randTime
+        
+        
+        
+InstaBot("your_usernmae", "your_password")
