@@ -80,7 +80,6 @@ def follow_like_comment():
             search_2.send_keys(Keys.ENTER)
             count +=1 # count = count +1
            driver.implicitly_wait(30)
-      
            time.sleep(1)
            driver.implicitly_wait(30)
            follow = driver.find_element_by_xpath('//*[@id="react-root"]/section/main/div/header/section/div[1]/div[2]/div/div/div/span/span[1]/button')
