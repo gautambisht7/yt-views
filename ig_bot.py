@@ -26,11 +26,11 @@ class InstaBot:
             .click()
 
 
-        try:
-            driver.implicitly_wait(30)
-            notifications = driver.find_element_by_xpath('//button[text()="Not Now"]')
-            notifications.click()
-            time.sleep(1)
+         try:
+             driver.implicitly_wait(30)
+             notifications = driver.find_element_by_xpath('//button[text()="Not Now"]')
+             notifications.click()
+             time.sleep(1)
          except:
              pass
   
