@@ -15,7 +15,6 @@ driver = webdriver.Chrome(executable_path=os.environ.get("CHROMEDRIVER_PATH"), c
 
 # initialize driver
 
-driver = webdriver.Edge()
 
 def login(username_, password_):
     driver.get('https://www.instagram.com/')
