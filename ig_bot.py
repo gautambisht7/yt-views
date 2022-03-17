@@ -62,12 +62,14 @@ def login(username_, password_):
         pass
 
 def follow_like_comment():
-        
+        driver.implicitly_wait(30)
         search_1 = driver.find_element_by_xpath('//span[text()="Search"]')
         driver.implicitly_wait(30)
         search_1.click()
         time.sleep(1)
+        driver.implicitly_wait(30)
         search_2 = driver.find_element_by_xpath('//input[@placeholder="Search"]')
+        driver.implicitly_wait(30)
         search_2.send_keys('virat.kohli')
         driver.implicitly_wait(30)
         search_2.send_keys(Keys.ENTER)   
