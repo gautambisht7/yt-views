@@ -83,7 +83,7 @@ def follow_like_comment():
 login('testuseraccount24', 'testuser')
 follow_like_comment()
 
-while (True):    
+while (True):        
         driver.implicitly_wait(30)
         follow = driver.find_element_by_xpath('//*[@id="react-root"]/section/main/div/header/section/div[1]/div[2]/div/div/div/span/span[1]/button')
         follow.click()
@@ -95,5 +95,3 @@ while (True):
         driver.implicitly_wait(30)
         unfollow2.click()
         time.sleep(5)
-# function call
-
