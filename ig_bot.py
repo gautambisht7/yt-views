@@ -76,7 +76,7 @@ def follow_like_comment():
         time.sleep(1)
 
         count = 0
-        while count <3:
+        while count <2:
             search_2.send_keys(Keys.ENTER)
             count +=1 # count = count +1
             time.sleep(1)
