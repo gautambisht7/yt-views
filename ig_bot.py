@@ -26,15 +26,17 @@ class InstaBot:
 
 
         time.sleep(getRandomTime())
+        driver.implicitly_wait(30)
         driver.find_element_by_xpath("//button[contains(text(), 'Not Now')]")\
             .click()
   
         time.sleep(getRandomTime())
+        driver.implicitly_wait(30)
         driver.find_element_by_xpath('//button[text()="Not Now"]').click()
-            
+        driver.implicitly_wait(30)
         search_2 = driver.find_element_by_xpath('//input[@placeholder="Search"]')
         search_2.send_keys('virat.kohli')
-        time.sleep(5)
+        time.sleep(6)
         search_2.send_keys(Keys.ENTER)   
         count = 0
         while count <2:
