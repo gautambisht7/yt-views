@@ -13,9 +13,10 @@ chrome_options.add_argument("--no-sandbox")
 driver = webdriver.Chrome(executable_path=os.environ.get("CHROMEDRIVER_PATH"), chrome_options=chrome_options)
 class InstaBot:
     def __init__(self, username, password):
-      
+        driver.implicitly_wait(30)
         driver.get("https://instagram.com")      
         time.sleep(getRandomTime())
+        driver.implicitly_wait(30)
         driver.find_element_by_xpath("//input[@name=\"username\"]")\
             .send_keys('test_python_11')
         driver.find_element_by_xpath("//input[@name=\"password\"]")\
