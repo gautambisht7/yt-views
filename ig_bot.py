@@ -7,8 +7,6 @@ from selenium import webdriver
 # initialize driver
 
 driver = webdriver.Edge()
-
-
 driver.get('https://www.instagram.com/')
 driver.implicitly_wait(30)
 
