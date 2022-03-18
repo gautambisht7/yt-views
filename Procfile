@@ -1,1 +1,1 @@
-worker: python ig_bot.py
+worker: python bot.py
