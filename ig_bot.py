@@ -16,7 +16,6 @@ class InstaBot:
         driver.implicitly_wait(30)
         driver.get("https://instagram.com")      
         time.sleep(getRandomTime())
-        driver.implicitly_wait(30)
         driver.find_element_by_xpath("//input[@name=\"username\"]")\
             .send_keys('_gautambisht_11')
         driver.find_element_by_xpath("//input[@name=\"password\"]")\
