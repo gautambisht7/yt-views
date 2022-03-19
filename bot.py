@@ -100,8 +100,6 @@ while (True):
         driver.refresh()
         print("Refreshing.")
         time.sleep(5)
-        driver.save_screenshot("C:\\Users\\IS\\Videos\\Captures\\screenshot.png")
-        print("Screenshot saved.")
     except:
         pass
         
