@@ -41,14 +41,12 @@ class InstaBot:
         try:
              driver.implicitly_wait(30)
              time.sleep(getRandomTime())
-             driver.find_element_by_xpath('/html/body/div[5]/div/div/div/div[3]/button[2]')\
-                  .click()
+             driver.find_element_by_xpath('/html/body/div[5]/div/div/div/div[3]/button[2]').click()
 
         except:
            driver.implicitly_wait(30)
            time.sleep(getRandomTime())
-           driver.find_element_by_xpath('/html/body/div[5]/div/div/div/div[3]/button[1]')\
-                .click()
+           driver.find_element_by_xpath('/html/body/div[5]/div/div/div/div[3]/button[1]').click()
         
         try:
             driver.implicitly_wait(30)
