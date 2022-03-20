@@ -27,27 +27,21 @@ class InstaBot:
 
 
         try:
-             driver.implicitly_wait(30)
-             notifications = driver.find_element_by_xpath('//button[text()="Not Now"]')
-             notifications.click()
-             time.sleep(1)
+             driver.implicitly_wait(10)
+             driver.find_element_by_xpath('//button[@type="submit"]').click()
+     
         except:
-             driver.refresh()
-             driver.implicitly_wait(30)
-             time.sleep(6)
-             notifications = driver.find_element_by_xpath('//button[text()="Not Now"]')
-             notifications.click()
+             pass
             
 
         try:
-             driver.implicitly_wait(30)
-             time.sleep(getRandomTime())
-             driver.find_element_by_xpath('/html/body/div[5]/div/div/div/div[3]/button[2]').click()
+             
+             driver.implicitly_wait(10)
+             driver.find_element_by_xpath('//button[@type="submit"]').click()
+        
 
         except:
-           driver.implicitly_wait(30)
-           time.sleep(getRandomTime())
-           driver.find_element_by_xpath('/html/body/div[5]/div/div/div/div[3]/button[1]').click()
+           pass
         
         try:
             driver.implicitly_wait(30)
