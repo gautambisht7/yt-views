@@ -11,6 +11,7 @@ chrome_options.add_argument("--headless")
 chrome_options.add_argument("--disable-dev-shm-usage")
 chrome_options.add_argument("--no-sandbox")
 driver = webdriver.Chrome(executable_path=os.environ.get("CHROMEDRIVER_PATH"), chrome_options=chrome_options)
+driver.maximize_window()
 class InstaBot:
     def __init__(self, username, password):
         driver.implicitly_wait(30)
