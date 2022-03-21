@@ -22,7 +22,7 @@ try:
 except:
     follow = driver.find_element_by_xpath('//*[@id="react-root"]/section/main/div/header/section/div[1]/div[2]/div/div/a/button/div').click()
     driver.implicitly_wait(30)
-    time.sleep(3))
+    time.sleep(3)
 username = driver.find_element_by_xpath('//*[@id="loginForm"]/div/div[1]/div/label/input')
 username.click()
 username.send_keys('_gautambisht_11')
