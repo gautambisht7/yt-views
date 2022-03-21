@@ -30,7 +30,7 @@ class InstaBot:
            time.sleep(5)
            driver.implicitly_wait(30)
            search_2 = driver.find_element_by_xpath('//input[@placeholder="Search"]')
-           search_2.send_keys("virat.kohli")
+           search_2.send_keys("cristiano")
            time.sleep(5)
            search_2.send_keys(Keys.ENTER)   
            count = 0
@@ -45,7 +45,7 @@ class InstaBot:
                   driver.implicitly_wait(30)
                   follow = driver.find_element_by_xpath('//*[@id="react-root"]/section/main/div/header/section/div[1]/div[2]/div/div/div/span/span[1]/button').click()
                   print('Following')
-                  time.sleep(50)
+                  time.sleep(10)
                   unfollow1 = driver.find_element_by_xpath('//*[@id="react-root"]/section/main/div/header/section/div[1]/div[2]/div/div[2]/div/span/span[1]/button').click()
                   time.sleep(2)
                   unfollow2 = driver.find_element_by_xpath('/html/body/div[6]/div/div/div/div[3]/button[1]').click()
