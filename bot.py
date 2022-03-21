@@ -14,9 +14,15 @@ driver.implicitly_wait(30)
 driver.get("https://instagram.com/virat.kohli/") 
 time.sleep(6)
 driver.implicitly_wait(30)
-login = driver.find_element_by_xpath('//*[@id="react-root"]/section/nav/div[2]/div/div/div[3]/div/span/a[1]/button').click()
-driver.implicitly_wait(30)
-time.sleep(3)
+try:
+   login = driver.find_element_by_xpath('//*[@id="react-root"]/section/nav/div[2]/div/div/div[3]/div/span/a[1]/button').click()
+   driver.implicitly_wait(30)
+   time.sleep(3)
+
+except:
+    follow = driver.find_element_by_xpath('//*[@id="react-root"]/section/main/div/header/section/div[1]/div[2]/div/div/a/button/div').click()
+    driver.implicitly_wait(30)
+    time.sleep(3))
 username = driver.find_element_by_xpath('//*[@id="loginForm"]/div/div[1]/div/label/input')
 username.click()
 username.send_keys('_gautambisht_11')
