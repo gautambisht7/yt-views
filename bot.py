@@ -45,7 +45,7 @@ class InstaBot:
                   driver.implicitly_wait(30)
                   follow = driver.find_element_by_xpath('//*[@id="react-root"]/section/main/div/header/section/div[1]/div[2]/div/div/div/span/span[1]/button').click()
                   print('Following')
-                  time.sleep(50)
+                  time.sleep(30)
                   unfollow1 = driver.find_element_by_xpath('//*[@id="react-root"]/section/main/div/header/section/div[1]/div[2]/div/div[2]/div/span/span[1]/button').click()
                   time.sleep(2)
                   unfollow2 = driver.find_element_by_xpath('/html/body/div[6]/div/div/div/div[3]/button[1]').click()
