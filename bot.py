@@ -12,6 +12,7 @@ driver = webdriver.Chrome(executable_path=os.environ.get("CHROMEDRIVER_PATH"), c
 
 driver.implicitly_wait(30)
 driver.get("https://instagram.com/virat.kohli/") 
+time.sleep(6)
 driver.implicitly_wait(30)
 login = driver.find_element_by_xpath('//*[@id="react-root"]/section/nav/div[2]/div/div/div[3]/div/span/a[1]/button').click()
 driver.implicitly_wait(30)
