@@ -30,7 +30,7 @@ class InstaBot:
            time.sleep(5)
            driver.implicitly_wait(30)
            search_2 = driver.find_element_by_xpath('//input[@placeholder="Search"]')
-           search_2.send_keys("virat.kohli")
+           search_2.send_keys("narendramodi")
            time.sleep(5)
            search_2.send_keys(Keys.ENTER)   
            count = 0
