@@ -12,13 +12,13 @@ chrome_options.add_argument("--headless")
 chrome_options.add_argument("--disable-dev-shm-usage")
 chrome_options.add_argument("--no-sandbox")
 driver = webdriver.Chrome(executable_path=os.environ.get("CHROMEDRIVER_PATH"), chrome_options=chrome_options)
+driver.get('''https://www.youtube.com/watch?v=LVYMwW79j6Q''')
 while True:
      
-     driver.get('''https://www.youtube.com/watch?v=LVYMwW79j6Q''')
-     time.sleep(45)
-
+     
+     time.sleep(70)
      driver.refresh()
      print('done')
-     time.sleep(5)
+
 
 
