@@ -15,17 +15,8 @@ driver = webdriver.Chrome(executable_path=os.environ.get("CHROMEDRIVER_PATH"), c
 driver.get('''https://www.youtube.com/watch?v=LVYMwW79j6Q''')
 while True:
      
-     browser.execute_script('''window.open("https://www.youtube.com/watch?v=LVYMwW79j6Q","_blank");''')
-     browser.execute_script('''window.open("https://www.youtube.com/watch?v=LVYMwW79j6Q","_blank");''')
-     browser.execute_script('''window.open("https://www.youtube.com/watch?v=LVYMwW79j6Q","_blank");''')
-     browser.execute_script('''window.open("https://www.youtube.com/watch?v=LVYMwW79j6Q","_blank");''')
-     browser.execute_script('''window.open("https://www.youtube.com/watch?v=LVYMwW79j6Q","_blank");''')
-     browser.execute_script('''window.open("https://www.youtube.com/watch?v=LVYMwW79j6Q","_blank");''')
-     browser.execute_script('''window.open("https://www.youtube.com/watch?v=LVYMwW79j6Q","_blank");''')
-     browser.execute_script('''window.open("https://www.youtube.com/watch?v=LVYMwW79j6Q","_blank");''')
-     browser.execute_script('''window.open("https://www.youtube.com/watch?v=LVYMwW79j6Q","_blank");''')
-     browser.execute_script('''window.open("https://www.youtube.com/watch?v=LVYMwW79j6Q","_blank");''')
-     time.sleep(70)
+     
+     time.sleep(40)
      driver.refresh()
      print('done')
 
