@@ -14,11 +14,21 @@ chrome_options.add_argument("--no-sandbox")
 driver = webdriver.Chrome(executable_path=os.environ.get("CHROMEDRIVER_PATH"), chrome_options=chrome_options)
 
 while True:
-     driver.get('https://www.youtube.com/watch?v=LVYMwW79j6Q')
+     driver.get('''https://www.youtube.com/watch?v=LVYMwW79j6Q''')
+     time.sleep(5)
      driver.execute_script('''window.open("https://www.youtube.com/watch?v=LVYMwW79j6Q", "_blank");''')
+     time.sleep(5)
      driver.execute_script('''window.open("https://www.youtube.com/watch?v=LVYMwW79j6Q", "_blank");''')
+     time.sleep(5)
      driver.execute_script('''window.open("https://www.youtube.com/watch?v=LVYMwW79j6Q", "_blank");''')
+     time.sleep(5)
+
      driver.execute_script('''window.open("https://www.youtube.com/watch?v=LVYMwW79j6Q", "_blank");''')
+     time.sleep(5)
+     
      driver.execute_script('''window.open("https://www.youtube.com/watch?v=LVYMwW79j6Q", "_blank");''')
-     time.sleeep(66)
+     time.sleep(6)
+     print('Done')
      browser.quit()
+     time.sleep(5)
+
