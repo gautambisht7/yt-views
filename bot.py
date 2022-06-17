@@ -2,6 +2,7 @@ from selenium import webdriver
 import time
 from selenium.webdriver.common.keys import Keys
 import os
+import keyboard
 from random import seed
 from random import randint
 
