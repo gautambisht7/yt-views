@@ -15,10 +15,8 @@ driver = webdriver.Chrome(executable_path=os.environ.get("CHROMEDRIVER_PATH"), c
 while True:
      
      driver.get('''https://www.youtube.com/watch?v=LVYMwW79j6Q''')
-     time.sleep(8)
+     time.sleep(45)
 
-     print('space')
-     time.sleep(20)
      driver.refresh()
      print('done')
      time.sleep(5)
