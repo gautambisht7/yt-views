@@ -2,7 +2,7 @@ from selenium import webdriver
 import time
 from selenium.webdriver.common.keys import Keys
 import os
-import pyautogui
+
 from random import seed
 from random import randint
 
@@ -16,8 +16,6 @@ driver.get('''https://www.youtube.com/watch?v=LVYMwW79j6Q''')
 while True:
      driver.get('''https://www.youtube.com/watch?v=LVYMwW79j6Q''')
      time.sleep(8)
-     pyautogui.press('space')
-     print('space')
      time.sleep(24)
      driver.refresh()
      print('done')
