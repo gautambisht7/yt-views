@@ -2,7 +2,7 @@ from selenium import webdriver
 import time
 from selenium.webdriver.common.keys import Keys
 import os
-import keyboard
+
 from random import seed
 from random import randint
 
@@ -16,7 +16,7 @@ while True:
      
      driver.get('''https://www.youtube.com/watch?v=LVYMwW79j6Q''')
      time.sleep(8)
-     keyboard.press_and_release('space')
+
      print('space')
      time.sleep(20)
      driver.refresh()
