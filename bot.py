@@ -27,7 +27,7 @@ while True:
      time.sleep(5)
      
      driver.execute_script('''window.open("https://www.youtube.com/watch?v=LVYMwW79j6Q", "_blank");''')
-     time.sleep(6)
+     time.sleep(66)
      print('Done')
      browser.quit()
      time.sleep(5)
