@@ -2,7 +2,7 @@ from selenium import webdriver
 import time
 from selenium.webdriver.common.keys import Keys
 import os
-
+import pyautogui
 from random import seed
 from random import randint
 
@@ -14,9 +14,15 @@ chrome_options.add_argument("--no-sandbox")
 driver = webdriver.Chrome(executable_path=os.environ.get("CHROMEDRIVER_PATH"), chrome_options=chrome_options)
 driver.get('''https://www.youtube.com/watch?v=LVYMwW79j6Q''')
 while True:
+     driver.get('''https://www.youtube.com/watch?v=LVYMwW79j6Q''')
+     time.sleep(8)
+     pyautogui.press('space')
+     print('space')
+     time.sleep(24)
+     driver.refresh()
+     print('done')
+     time.sleep(5)
      
-     
-     time.sleep(40)
      driver.refresh()
      print('done')
 
