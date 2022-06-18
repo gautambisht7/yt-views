@@ -12,17 +12,23 @@ chrome_options.add_argument("--headless")
 chrome_options.add_argument("--disable-dev-shm-usage")
 chrome_options.add_argument("--no-sandbox")
 driver = webdriver.Chrome(executable_path=os.environ.get("CHROMEDRIVER_PATH"), chrome_options=chrome_options)
-
+driver.get('''https://www.youtube.com/results?search_query=Nxt+Level+Gaming+CRIMINALS+VS+HIPHOP+%7C%7C+FREE+FIRE+3D+ANIMATION''')
+time.sleep(10)
+a=driver.find_element_by_xpath('//*[@id="dismissible"]/div')
+a.click()
 while True:
-     driver.get('''https://www.youtube.com/watch?v=LVYMwW79j6Q''')
-     time.sleep(8)
-     time.sleep(24)
-     driver.refresh()
-     print('done')
-     time.sleep(5)
+     time.sleep(66)
      
      driver.refresh()
-     print('done')
-
+     a = 0
+     
+    
+     
+     print('done',+a,'Times')
+     a=a+1
+     driver.get('''https://www.youtube.com/results?search_query=Nxt+Level+Gaming+CRIMINALS+VS+HIPHOP+%7C%7C+FREE+FIRE+3D+ANIMATION''')
+     time.sleep(5)
+     a=driver.find_element_by_xpath('//*[@id="dismissible"]/div')
+     a.click()
 
 
