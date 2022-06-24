@@ -24,7 +24,7 @@ a=driver.find_element_by_xpath('//*[@id="dismissible"]/div')
 a.click()
 while True:
      
-     time.sleep(getRandomTime())
+     time.sleep(getrandomTime())
      
      driver.refresh()
      a = 0
@@ -32,7 +32,8 @@ while True:
     
      
      print('done',+a,'Times')
-     a=a+1
+     a+=1
+     time.sleep(361)
      driver.get('''https://www.youtube.com/results?search_query=Nxt+Level+Gaming+CRIMINALS+VS+HIPHOP+%7C%7C+FREE+FIRE+3D+ANIMATION''')
      a=driver.find_element_by_xpath('//*[@id="dismissible"]/div')
      a.click()
