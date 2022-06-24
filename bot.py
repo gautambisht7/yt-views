@@ -26,7 +26,7 @@ a=driver.find_element_by_xpath('//*[@id="dismissible"]/div')
 a.click()
 while True:
      
-     time.sleep(getrandomTime())
+     time.sleep(getRandomTime())
      
      driver.refresh()
      a = 0
