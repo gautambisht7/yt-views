@@ -14,7 +14,7 @@ chrome_options.add_argument("--headless")
 chrome_options.add_argument("--disable-dev-shm-usage")
 chrome_options.add_argument("--no-sandbox")
 def getRandomTime():
-        randTime = randint(50, 65)
+        randTime = randint(70, 90)
         return randTime 
 def getRandomime():
         randTime1 = randint(5, 10)
