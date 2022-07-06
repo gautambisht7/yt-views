@@ -14,7 +14,7 @@ chrome_options.add_argument("--headless")
 chrome_options.add_argument("--disable-dev-shm-usage")
 chrome_options.add_argument("--no-sandbox")
 def getRandomTime():
-        randTime = randint(70, 90)
+        randTime = randint(72, 90)
         return randTime 
 def getRandomime():
         randTime1 = randint(5, 10)
@@ -24,18 +24,11 @@ driver.get('''https://www.youtube.com/results?search_query=Nxt+Level+Gaming+CRIM
 time.sleep(getRandomime())
 a=driver.find_element_by_xpath('//*[@id="dismissible"]/div')
 a.click()
+
 while True:
-     
-     time.sleep(getRandomTime())
-     
-     driver.refresh()
-     a = 0
-     
-    
-     
-     print('done',+a,'Times')
-     a+=1
-     time.sleep(10800)
-     driver.get('''https://www.youtube.com/results?search_query=Nxt+Level+Gaming+CRIMINALS+VS+HIPHOP+%7C%7C+FREE+FIRE+3D+ANIMATION''')
-     a=driver.find_element_by_xpath('//*[@id="dismissible"]/div')
-     a.click()
+    try: 
+       time.sleep(getRandomTime())
+       driver.refresh()
+       driver.get('https://www.youtube.com/watch?v=LVYMwW79j6Q')
+    except :
+        pass
