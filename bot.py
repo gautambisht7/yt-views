@@ -21,15 +21,15 @@ def getRandomime():
         randTime1 = randint(5, 10)
         return randTime1
 
-# driver.get('''https://www.youtube.com/results?search_query=Nxt+Level+Gaming+CRIMINALS+VS+HIPHOP+%7C%7C+FREE+FIRE+3D+ANIMATION''')
-# time.sleep(getRandomime())
-# a=driver.find_element_by_xpath('//*[@id="dismissible"]/div')
-# a.click()
+driver.get('''https://www.youtube.com/results?search_query=Nxt+Level+Gaming+CRIMINALS+VS+HIPHOP+%7C%7C+FREE+FIRE+3D+ANIMATION''')
+time.sleep(getRandomime())
+a=driver.find_element_by_xpath('//*[@id="dismissible"]/div')
+a.click()
 
-# while True:
-#     try: 
-#        time.sleep(getRandomTime())
-#        driver.refresh()
-#        driver.get('https://www.youtube.com/watch?v=LVYMwW79j6Q')
-#     except :
-#         pass
+while True:
+    try: 
+       time.sleep(getRandomTime())
+       driver.refresh()
+       driver.get('https://www.youtube.com/watch?v=LVYMwW79j6Q')
+    except :
+        pass
